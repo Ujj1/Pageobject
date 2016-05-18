@@ -5,7 +5,6 @@ import org.junit.Assert;
 
 
 public class VerifyUtils {
-
     static Logger LOGGER = Logger.getLogger(VerifyUtils.class);
     public static void contains(String expected, String actual) {
         boolean result=false;
@@ -45,7 +44,7 @@ public class VerifyUtils {
         LOGGER.info("Verifying the expected data :"+expected+" to be visbile in actual value :"+actual);
         Assert.assertEquals(message, expected.replaceAll("\\s+",""), actual.replaceAll("\\s+",""));
     }
-
+hello hru?
     public static void fail(String message) {
         Assert.fail(message);
     }
